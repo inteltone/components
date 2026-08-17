@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">        
+        <div class="wrapper">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        <button
+                            type="button"
+                            class="accordion-trigger"
+                            id="accordion-trigger-1"
+                            aria-expanded="true"
+                            aria-controls="accordion-panel-1"
+                        >
+                            <span>Экономия места на странице</span>
+                        </button>
+                    </h3>
+                    <div
+                        class="accordion-panel"
+                        id="accordion-panel-1"
+                        role="region"
+                        aria-labelledby="accordion-trigger-1"
+                    >
+                        <div class="accordion-content">
+                            <p>Аккордеоны позволяют разместить большое количество информации на ограниченном пространстве, не перегружая интерфейс.</p>
+                            <p><img src="/img/accordion.webp" alt=""></p>
+                            <p>Вместо длинных простыней текста пользователь видит только заголовки и может открыть то, что ему действительно нужно. Это особенно важно для мобильных устройств, где каждый пиксель экрана на вес золота.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        <button
+                            type="button"
+                            class="accordion-trigger"
+                            id="accordion-trigger-2"
+                            aria-expanded="false"
+                            aria-controls="accordion-panel-2"
+                        >
+                            <span>Улучшение навигации и пользовательского опыта</span>
+                        </button>
+                    </h3>
+                    <div
+                        class="accordion-panel"
+                        id="accordion-panel-2"
+                        role="region"
+                        aria-labelledby="accordion-trigger-2"
+                        inert
+                    >
+                        <div class="accordion-content">
+                            <p>Благодаря аккордеону посетитель сайта не теряется в потоке данных, а самостоятельно управляет тем, какую информацию разворачивать. Это снижает когнитивную нагрузку и делает взаимодействие с сайтом более интуитивным.</p>
+                            <p>Пользователь чувствует контроль над процессом, что положительно влияет на общее впечатление от сайта.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-heading">
+                        <button
+                            type="button"
+                            class="accordion-trigger"
+                            id="accordion-trigger-3"
+                            aria-expanded="false"
+                            aria-controls="accordion-panel-3"
+                        >
+                            <span>Повышение конверсии и структурирование контента</span>
+                        </button>
+                    </h3>
+                    <div
+                        class="accordion-panel"
+                        id="accordion-panel-3"
+                        role="region"
+                        aria-labelledby="accordion-trigger-3"
+                        inert
+                    >
+                        <div class="accordion-content">
+                            <p>Аккордеоны помогают логически группировать связанные блоки информации, например, вопросы в FAQ или этапы работы с сервисом.</p>
+                            <p>Такая структура подводит пользователя к целевому действию поэтапно, не отвлекая на второстепенные детали. В итоге посетитель быстрее находит ответы на свои вопросы и с большей вероятностью совершит покупку или заявку.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
